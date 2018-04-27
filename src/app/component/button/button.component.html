@@ -1,0 +1,4 @@
+
+  <button (click)="send()" class="btn btn-primary">send</button>
+  <input type="text" placeholder={{post}}>
+  <input type="text-area" placeholder="value" [(ngModel)]="valuetext" (input)="display($event.target.value)" required /><br />

@@ -1,0 +1,7 @@
+<form class="container col-md-4" >
+<h2>Register</h2>
+<input [(ngModel)]="user.username" type="text" name="username" class="form-control" placeholder="username" required /><br />
+<input [(ngModel)]="user.password" type="password" name="password" class="form-control" placeholder="password" required /><br />
+<button  (click)="goToLogin()"  class="btn btn-primary"> Login </button> 
+</form>
+

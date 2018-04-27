@@ -1,0 +1,10 @@
+<form class="container" style="max-width:400px" >
+        <h2>Post blog</h2>
+        <input type="text-area" class="form-control" name="title" placeholder="PostTitle" [(ngModel)]="post.title" required /><br />
+        <input type="text-area" class="form-control" name="description" placeholder="Post Description" [(ngModel)]="post.description" required /><br />
+        <button (click)="submit()" class="btn btn-primary"> Submit </button> 
+        </form>
+        <div  class="container"style="max-width:700px">
+
+                <app-button [post]="post.title" (value)="catchvalue($event)" ></app-button>
+        </div>

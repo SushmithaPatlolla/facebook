@@ -1,0 +1,22 @@
+<!-- <table>
+  <td  *ngFor="let data of obj">
+    <tr>
+      {{data.title}}
+    </tr>
+    <tr>
+      {{data.description}}
+    </tr>
+  </td>
+</table>style="width: 18rem;" -->
+<!-- [routerLink]="['/post', newdata]" -->
+
+    <div  class="card container" (click)="senddata(data)"  *ngFor="let data of obj">
+        <div class="card-header">
+            {{data.title}}
+        </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">{{data.description}}</li>
+        </ul>
+        <ul><button>Like</button> <button>Delete</button></ul>
+      </div>
+     
